@@ -163,12 +163,21 @@ a {
 /* Icons */
 
 .icon {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
+}
+
+.icon--small {
+  width: 30px;
+  height: 30px;
 }
 
 .icon--primary {
   fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: #fff;
 }
 
 .icon--container {
@@ -176,9 +185,13 @@ a {
   background-color: #f3f9fa;
   border-radius: 100%;
   display: inline-flex;
-  height: 66px;
+  height: 64px;
   justify-content: center;
-  width: 66px;
+  width: 64px;
+}
+
+.icon--container--accent {
+  background-color: var(--color-accent);
 }
 
 /* Buttons */
@@ -436,9 +449,43 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  /* 768 for tablets */
   .grid--1x2 {
     /* grid-template-columns: 50% 50%; */
     /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Review Card */
+
+.review_card {
+  padding: 3rem;
+  font-size: 1.5rem;
+}
+
+.rc__image {
+  position: relative;
+}
+
+.rc__image > img {
+  width: 100%;
+}
+
+.rc__image > .icon--container {
+  position: absolute;
+  top: 2rem;
+  right: -32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .review_card .quote,
+  .review_card .quote__author {
+    font-size: 2.5rem;
+  }
+
+  .review_card .quote {
+    margin-left: 6rem;
+    margin-right: 0;
   }
 }
