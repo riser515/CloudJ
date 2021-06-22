@@ -602,3 +602,66 @@ a {
   padding-bottom: calc(var(--padding--vertical) + 4rem);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 80%);
 }
+
+/* Navbar */
+
+.nav {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.logo {
+  width: 50%;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  padding: 0 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.nav__item > a {
+  color: #d1d0db;
+}
+
+.nav__item > a:hover {
+  color: var(--color-text);
+}
+
+.menu__icon {
+  opacity: 0.5;
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.nav.collapsible--expanded .menu__icon {
+  opacity: 1;
+  box-shadow: 0 0 0 3px #666;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__icon {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    font-size: 1.6rem;
+    display: flex;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    border-bottom: 0;
+  }
+}
