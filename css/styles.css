@@ -37,6 +37,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -663,5 +664,38 @@ a {
 
   .nav__item {
     border-bottom: 0;
+  }
+}
+
+/* Hero */
+
+.hero {
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3bf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 20rem;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
