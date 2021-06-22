@@ -25,7 +25,17 @@
           <p class="hero__tagline">An Iconic Tech Experience...</p>
           <a href="" class="btn btn--accent btn--long">Get Started</a>
         </header>
-        <img class="hero__image" src="Images/banner@1x.webp" alt="Banner" />
+        <picture>
+          <source
+            type="image/webp"
+            srcset="Images/banner@1x.webp 1x, Images/banner@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="Images/banner@1x.png 1x, Images/banner@2x.png 2x"
+          />
+          <img class="hero__image" src="Images/banner@1x.webp" alt="Banner" />
+        </picture>
       </div>
     </div>
     <script src="JS/main.js"></script>
