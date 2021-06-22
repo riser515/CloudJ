@@ -15,27 +15,35 @@
   </head>
 
   <body>
-    <div class="block block--dark block--skewed-left hero">
-      <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
-          <h1 class="block__heading">
-            Cloud J<br />
-            Uplift your content
-          </h1>
-          <p class="hero__tagline">An Iconic Tech Experience...</p>
-          <a href="" class="btn btn--accent btn--long">Get Started</a>
-        </header>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="Images/banner@1x.webp 1x, Images/banner@2x.webp 2x"
-          />
-          <source
-            type="image/png"
-            srcset="Images/banner@1x.png 1x, Images/banner@2x.png 2x"
-          />
-          <img class="hero__image" src="Images/banner@1x.webp" alt="Banner" />
-        </picture>
+    <div class="block container">
+      <header class="block__header">
+        <h2>Starting at ₹749 per month</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+          obcaecati. Lorem ipsum dolor sit amet.
+        </p>
+      </header>
+      <div class="input-group">
+        <input
+          type="text"
+          class="input"
+          placeholder="Enter domain name here..."
+        />
+        <button class="btn btn--accent">
+          <svg
+            class="icon icon-primary"
+            style="
+              width: 2rem;
+              height: 2rem;
+              margin-right: 1rem;
+              vertical-align: middle;
+              fill: #fff;
+            "
+          >
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+          Search
+        </button>
       </div>
     </div>
     <script src="JS/main.js"></script>
