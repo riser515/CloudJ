@@ -30,6 +30,7 @@ body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 h1,
@@ -101,8 +102,6 @@ a {
 
 /* Lists */
 .list {
-  color: var(--color-headings);
-  display: inline-block;
   list-style: none;
   padding-left: 0;
 }
@@ -115,6 +114,7 @@ a {
 .list--tickmark {
   list-style-image: url(../Icons/tick.svg);
   padding-left: 3rem;
+  color: var(--color-headings);
 }
 
 .list--tickmark .list__item {
@@ -205,10 +205,19 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: none;
-  padding: 2rem 3rem;
+  padding: 2rem 3vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn--primary:hover {
+  background: #3a8ffd;
 }
 
 .btn--secondary {
@@ -415,6 +424,7 @@ a {
 
 .media {
   display: flex;
+  margin-bottom: 4rem;
 }
 
 .media__title {
@@ -609,6 +619,7 @@ a {
 
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .block__heading {
@@ -620,18 +631,24 @@ a {
   color: #7b858b;
 }
 
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
+  color: var(--color-text);
+}
+
 .block--dark .block__heading {
   color: var(--color-text);
 }
 
 .block--skewed-left {
   padding-bottom: calc(var(--padding--vertical) + 4rem);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 }
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding--vertical) + 4rem);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 80%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 95%);
 }
 
 /* Navbar */
@@ -705,6 +722,7 @@ a {
 
 .container {
   max-width: 1140px;
+  margin: 0 auto;
 }
 
 .hero__tagline {
@@ -789,5 +807,30 @@ a {
 @media screen and (min-width: 1024px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
+  }
+}
+
+/* Showcase Block */
+
+.block--showcase__image > img {
+  width: 100%;
+}
+
+.block--showcase > h2 {
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .block--showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block--showcase__image {
+    justify-self: end;
+  }
+
+  .block--showcase__image > img {
+    width: auto;
+    max-width: 700px;
   }
 }
