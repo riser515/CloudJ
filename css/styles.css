@@ -377,15 +377,15 @@ a {
   margin-bottom: 2rem;
 }
 
-.plan__popular {
+.plan--popular {
   transform: scale(1.1);
 }
 
-.plan__popular .card__header {
+.plan--popular .card__header {
   position: relative;
 }
 
-.plan__popular .card__header::before {
+.plan--popular .card__header::before {
   content: url(../Images/popular.svg);
   width: 40px;
   display: inline-block;
@@ -398,7 +398,7 @@ a {
   transform: scale(1.05);
 }
 
-.plan__popular:hover {
+.plan--popular:hover {
   transform: scale(1.15);
 }
 
@@ -497,7 +497,9 @@ a {
     /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(2, 1fr);
   }
+}
 
+@media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
