@@ -15,75 +15,47 @@
   </head>
 
   <body>
-    <section class="block block--dark block--skewed-right block--showcase">
+    <section class="block">
       <header class="block__header">
-        <h2 class="block__heading">User Friendly Control Panel</h2>
+        <h2>What our Customers Say</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt,
+          totam!
+        </p>
       </header>
-      <div class="container grid grid--1x2">
-        <picture class="block--showcase__image">
-          <source
-            type="image/webp"
-            srcset="Images/ipad.webp 1x, Images/ipad@2x.webp 2x"
-          />
-          <source
-            type="image/png"
-            srcset="Images/ipad.png 1x, Images/ipad@2x.png 2x"
-          />
-          <img src="Images/ipad.png" alt="Ipad" />
-        </picture>
-        <ul class="list">
-          <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="Images/sprite.svg#snap"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Easy Start & Managed Updates</h3>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corrupti dolor laboriosam obcaecati magnam rerum at nam nulla
-                  voluptatem nisi iure.
-                </p>
-              </div>
+      <div class="container">
+        <div class="card review_card">
+          <div class="grid grid--1x2">
+            <div class="rc__image">
+              <img src="Images/testimonial.jpg" alt="Happy Customer" />
+              <span class="icon--container icon--container--accent">
+                <svg class="icon icon--small icon--white">
+                  <use xlink:href="Images/sprite.svg#quotes"></use></svg
+              ></span>
             </div>
-          </li>
-          <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="Images/sprite.svg#snap"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Easy Start & Managed Updates</h3>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corrupti dolor laboriosam obcaecati magnam rerum at nam nulla
-                  voluptatem nisi iure.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="Images/sprite.svg#snap"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Easy Start & Managed Updates</h3>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corrupti dolor laboriosam obcaecati magnam rerum at nam nulla
-                  voluptatem nisi iure.
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
+            <blockquote class="quote">
+              <p class="quote__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam nemo aperiam omnis unde dolorem necessitatibus alias
+                non porro nesciunt corporis et deserunt harum dolore laudantium
+                aliquam nulla, quam illo tenetur.
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon--primary">
+                      <use xlink:href="Images/sprite.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="quote__author">Sonu Shah</h3>
+                    <p class="quote__organisation">Code Company</p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
       </div>
     </section>
     <script src="JS/main.js"></script>

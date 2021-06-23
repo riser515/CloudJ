@@ -518,6 +518,10 @@ a {
   width: 100%;
 }
 
+.rc__image .icon {
+  width: 50%;
+}
+
 .rc__image > .icon--container {
   position: absolute;
   top: 2rem;
