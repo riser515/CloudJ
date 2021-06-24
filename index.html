@@ -10,8 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -41,10 +41,20 @@
           <p class="hero__tagline">An Iconic Tech Experience...</p>
           <a href="" class="btn btn--accent btn--long">Get Started</a>
         </header>
-        <img class="hero__image" src="Images/banner@1x.webp" alt="Banner" />
+        <picture>
+          <source
+            type="image/webp"
+            srcset="Images/banner@1x.webp 1x, Images/banner@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="Images/banner@1x.png 1x, Images/banner@2x.png 2x"
+          />
+          <img class="hero__image" src="Images/banner1.webp" alt="Banner" />
+        </picture>
       </div>
     </div>
-    <div class="block container block--domain">
+    <div class="block container block--domain" data-aos="zoom-in">
       <header class="block__header">
         <h2>Starting at ₹749 per month</h2>
         <p>
@@ -60,7 +70,7 @@
         />
         <button class="btn btn--accent">
           <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#search"></use>
+            <use xlink:href="Images/sprite.svg#search"></use>
           </svg>
           Search
         </button>
@@ -151,7 +161,7 @@
           </p>
         </header>
         <article class="grid grid--1x2 feature">
-          <div class="feature__content">
+          <div class="feature__content" data-aos="fade-up-right">
             <span class="icon--container">
               <svg class="icon icon--primary">
                 <use xlink:href="Images/sprite.svg#easy"></use></svg
@@ -165,7 +175,7 @@
             </p>
             <a href="#" class="arrow-link">Learn More</a>
           </div>
-          <picture>
+          <picture data-aos="fade-up-left">
             <source
               type="image/webp"
               srcset="Images/easy.webp 1x, Images/easy@2x.webp 2x"
@@ -178,7 +188,7 @@
           </picture>
         </article>
         <article class="grid grid--1x2 feature">
-          <div class="feature__content">
+          <div class="feature__content" data-aos="fade-up-left">
             <span class="icon--container">
               <svg class="icon icon--primary">
                 <use xlink:href="Images/sprite.svg#computer"></use></svg
@@ -192,20 +202,20 @@
             </p>
             <a href="#" class="arrow-link">Learn More</a>
           </div>
-          <picture>
+          <picture data-aos="fade-up-right">
             <source
               type="image/webp"
-              srcset="Images/easy.webp 1x, Images/easy@2x.webp 2x"
+              srcset="Images/fast.webp 1x, Images/fast@2x.webp 2x"
             />
             <source
               type="image/jpg"
-              srcset="Images/easy.jpg 1x, Images/easy@2x.jpg 2x"
+              srcset="Images/fast.jpg 1x, Images/fast@2x.jpg 2x"
             />
-            <img class="feature__image" src="Images/easy@2x.jpg" alt="" />
+            <img class="feature__image" src="Images/fast@2x.jpg" alt="" />
           </picture>
         </article>
         <article class="grid grid--1x2 feature">
-          <div class="feature__content">
+          <div class="feature__content" data-aos="fade-up-right">
             <span class="icon--container">
               <svg class="icon icon--primary">
                 <use xlink:href="Images/sprite.svg#wordpress"></use></svg
@@ -219,20 +229,20 @@
             </p>
             <a href="#" class="arrow-link">Learn More</a>
           </div>
-          <picture>
+          <picture data-aos="fade-up-left">
             <source
               type="image/webp"
-              srcset="Images/easy.webp 1x, Images/easy@2x.webp 2x"
+              srcset="Images/wordpress.webp 1x, Images/wordpress@2x.webp 2x"
             />
             <source
               type="image/jpg"
-              srcset="Images/easy.jpg 1x, Images/easy@2x.jpg 2x"
+              srcset="Images/wordpress.jpg 1x, Images/wordpress@2x.jpg 2x"
             />
-            <img class="feature__image" src="Images/easy@2x.jpg" alt="" />
+            <img class="feature__image" src="Images/wordpress@2x.jpg" alt="" />
           </picture>
         </article>
         <article class="grid grid--1x2 feature">
-          <div class="feature__content">
+          <div class="feature__content" data-aos="fade-up-left">
             <span class="icon--container">
               <svg class="icon icon--primary">
                 <use xlink:href="Images/sprite.svg#clock"></use></svg
@@ -246,16 +256,16 @@
             </p>
             <a href="#" class="arrow-link">Learn More</a>
           </div>
-          <picture>
+          <picture data-aos="fade-up-right">
             <source
               type="image/webp"
-              srcset="Images/easy.webp 1x, Images/easy@2x.webp 2x"
+              srcset="Images/support.webp 1x, Images/support@2x.webp 2x"
             />
             <source
               type="image/jpg"
-              srcset="Images/easy.jpg 1x, Images/easy@2x.jpg 2x"
+              srcset="Images/support.jpg 1x, Images/support@2x.jpg 2x"
             />
-            <img class="feature__image" src="Images/easy@2x.jpg" alt="" />
+            <img class="feature__image" src="Images/support@2x.jpg" alt="" />
           </picture>
         </article>
       </section>
@@ -456,5 +466,9 @@
       </div>
     </footer>
     <script src="JS/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
